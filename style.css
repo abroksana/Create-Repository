@@ -1,6 +1,114 @@
-.head {
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header {
+  display: flex; 
+  position: relative;
+  height: 150vh;
+   /* должно быть 100 */
+  min-height: 600px;
+  max-height: 756px;
+  background-color: #f2f2f2;
+ /* выше установили ограничения для секции */
+}
+.logo {
+  display: flex; 
+  position: absolute;
+  height: 32px;
+  width: 183px;
+  top: 30px;
+  left: 64px;
+}
+.header__title {
+  display: flex; 
+  width: 730px;
+  padding-left: 64px;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+.header__subtitle {
+  position: absolute;
+  display: flex; 
+  width: 388px;
+  bottom: 30px;
+  left: 64px;
+  line-height: 25px;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.main-illustration {
+  position: absolute;
+  height: 608px;
+  width: 765px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.header__square-pic {
+  display: flex;
+  position: absolute;
+  height: 568px;
+  width: 568px;
+  background-color: #2f80ed;
+  right: 0px;
+  top: 64px;
 
 }
-.head {
-    
+
+
+.two-columns {
+  display: flex; 
+  justify-content: space-between;
+  margin: 100px auto 0px;
+  width: 80%;
+  border: 1px solid #1322a7;
+}
+
+.two-columns__brief {
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #2f80ed;
+  border: 1px solid #a71364;
+  margin-top: 0;
+}
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+.two-columns__paragrapf {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.two-columns__paragrapf:first-child {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.two-columns__paragrapf:last-child {
+margin-bottom: 0;
+margin-top: 30px;
+}
+
+.span-accent {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: bold;
 }
